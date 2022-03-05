@@ -27,12 +27,26 @@ A fixed size merkle tree is used, in order to save gas.
 
 If you choose to deploy to the Rinkeby Testnet, you will be able to test the smart contract (ie. minting an NFT) via a user interface (web app). After deploying to Rinkeby, set up the web app project from https://github.com/violetwee/ERC721_MerkleTree_Frontend.
 
+## Contract Address (Rinkeby)
+
+0x29BE168B2AB32e60829D77a97A83eC419ed06e46
+
 # Testing on Remix
 
 - From GameItem contract, insert the address to mint item to for "awardItem" field
 - Click "awardItem". This should mint tokenId=1
 - Input 1 for "ownerOf" field
 - Click "ownerOf". You should see the owner's address for tokenId=1
+
+## Sample Mints
+
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_1.png" width="800px" height="auto"/>
+
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_2.png" width="800px" height="auto"/>
+
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_3.png" width="800px" height="auto"/>
+
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_4.png" width="800px" height="auto"/>
 
 # Resources
 
