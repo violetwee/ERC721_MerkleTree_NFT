@@ -20,7 +20,10 @@ A fixed size merkle tree is used, in order to save gas.
 
 ## Testing on Remix
 
-- From GameItem contract, insert the address to mint item to for "awardItem" field
+Each NFT costs 0.001 eth (1000000 gwei) to mint.
+
+- Set value to 1000000 Gwei
+- From GameItem deployed contract, paste the address to mint item to for "awardItem" field
 - Click "awardItem". This should mint tokenId=1
 - Input 1 for "ownerOf" field
 - Click "ownerOf". You should see the owner's address for tokenId=1
