@@ -1,0 +1,14 @@
+body {
+	background-color: #020024;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #fff;
+}
+
+.title {
+	font-size: 36pt;
+	padding: 48px;
+}
+
+.center {
+	text-align: center;
+}
