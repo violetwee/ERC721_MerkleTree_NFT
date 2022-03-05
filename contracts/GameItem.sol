@@ -5,6 +5,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 
 /**
@@ -22,7 +23,7 @@ contract GameItem is ERC721URIStorage {
     // Name and symbol definition for ERC721 token
     string public constant NAME = "GameItem";
     string public constant SYMBOL = "ITM";
-    uint256 public constant MAX_SUPPLY = 100;
+    uint256 public constant MAX_SUPPLY = 8;
     uint256 public constant PRICE = 0.001 ether;
     uint256 public constant MAX_PER_MINT = 1;
 
@@ -134,7 +135,7 @@ contract GameItem is ERC721URIStorage {
 */
 contract MerkleTree {
     bytes32[] public hashes;
-    uint256 public nSlots = 128; // to accommodate 100 mints
+    uint256 public nSlots = 8; // to accommodate 8 mints
     uint256 public nMinted;
 
     /**

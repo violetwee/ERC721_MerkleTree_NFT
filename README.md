@@ -16,22 +16,9 @@ A fixed size merkle tree is used, in order to save gas.
 
 - Copy GameItem.sol to Remix
 - Compile GameItem.sol on Remix
-- Deploy MerkleTree.sol (included in GameItem.sol file)
-- Copy the MerkleTree contract address and deploy the GameItem.sol contract with a specified number of leaves (ie. 0x0813d4a158d06784FDB48323344896B2B1aa0F85, 4)
+- Deploy GameItem.sol on Remix
 
-# Deploying to Rinkeby Testnet
-
-- Clone this project
-- From root directory, run `npm install` to install all dependencies
-- To deploy to Rinkeby, run `npx hardhat run scripts/run.js --network rinkeby`. This will execute the run.js script, which will auto deploy the GameItem.sol smart contract and mint an NFT. The contract address will also be shown.
-
-If you choose to deploy to the Rinkeby Testnet, you will be able to test the smart contract (ie. minting an NFT) via a user interface (web app). After deploying to Rinkeby, set up the web app project from https://github.com/violetwee/ERC721_MerkleTree_Frontend.
-
-## Contract Address (Rinkeby)
-
-0x29BE168B2AB32e60829D77a97A83eC419ed06e46
-
-# Testing on Remix
+## Testing on Remix
 
 - From GameItem contract, insert the address to mint item to for "awardItem" field
 - Click "awardItem". This should mint tokenId=1
@@ -40,13 +27,27 @@ If you choose to deploy to the Rinkeby Testnet, you will be able to test the sma
 
 ## Sample Mints
 
-<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_1.png" width="800px" height="auto"/>
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/mint_token_1.png" width="800px" height="auto"/>
 
-<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_2.png" width="800px" height="auto"/>
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/mint_token_2.png" width="800px" height="auto"/>
 
-<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_3.png" width="800px" height="auto"/>
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/mint_token_3.png" width="800px" height="auto"/>
 
-<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/Mint_TokenId_4.png" width="800px" height="auto"/>
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/mint_token_4.png" width="800px" height="auto"/>
+
+# Deploying to Rinkeby Testnet
+
+- Clone this project
+- From root directory, run `npm install` to install all dependencies
+- To deploy to Rinkeby, run `npx hardhat run scripts/run.js --network rinkeby`. This will execute the run.js script, which will auto deploy the GameItem.sol smart contract and mint an NFT. The contract address will also be shown.
+
+<img src="https://github.com/violetwee/ERC721_MerkleTree_NFT/blob/main/images/hardhat_rinkeby.png" width="800px" height="auto"/>
+
+If you choose to deploy to the Rinkeby Testnet, you will be able to test the smart contract (ie. minting an NFT) via a user interface (web app). After deploying to Rinkeby, set up the web app project from https://github.com/violetwee/ERC721_MerkleTree_Frontend.
+
+## Contract Address (Rinkeby)
+
+0x53E0111741076cDF614c48ca8Addde3BC6917BFb
 
 # Resources
 
