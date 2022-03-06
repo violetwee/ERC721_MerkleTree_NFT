@@ -40,7 +40,30 @@ Each NFT costs 0.001 eth (1000000 gwei) to mint.
 
 # Deploying to Rinkeby Testnet
 
+## Get an Alchemy API Key
+
+- Register for an account on Alchemy (https://www.alchemy.com/)
+- Create a new project
+- From project details page, click "View Key". Copy the HTTP URL and paste it on a text editor (temporarily).
+
+## Get your Metamask Private Key (Rinkeby)
+
+- Install and create a wallet on Metamask (https://metamask.io/), if you do not have one yet
+- Set the network to "Rinkeby Test Network"
+- Click on the 3 small dots and click on "Account Details"
+- Click "Export Private Key"
+- Copy this key and paste it on a text editor (temporarily)
+
+## Setup and deployment
+
 - Clone this project
+- Create a ".env" file on the root directory. Set the following string constants, using the values obtained above:
+
+```
+API_URL = <HTTP URL to Alchemy Project>
+PRIVATE_KEY = <Private Key to a Metamask account>
+```
+
 - From root directory, run `npm install` to install all dependencies
 - To deploy to Rinkeby, run `npx hardhat run scripts/run.js --network rinkeby`. This will execute the run.js script, which will auto deploy the GameItem.sol smart contract and mint an NFT. The contract address will also be shown.
 
@@ -59,3 +82,6 @@ If you choose to deploy to the Rinkeby Testnet, you will be able to test the sma
 - [Base64](https://docs.openzeppelin.com/contracts/4.x/utilities#base64) - On-chain Metadata
 - [Merkle Trees](https://www.youtube.com/watch?v=n6nEPaE7KZ8&list=PLO5VPQH6OWdULDcret0S0EYQ7YcKzrigz&index=18) - Merkle Trees Explained
 - [Hardhat](https://hardhat.org/) - Ethereum development environment
+- [Metamask](https://metamask.io/) - A crypto wallet & gateway to blockchain apps
+- [Rinkeby Faucets](https://faucets.chain.link/rinkeby) - Request eth for Rinkeby Testnet
+- [Rinkeby Etherscan](https://rinkeby.etherscan.io/) - Rinkeby Testnet block explorer
